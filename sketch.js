@@ -8,7 +8,7 @@ var txtSong = "Song Credits: Niwel - Bad Love";
 var txtColor = "rgba(255,255,255,0.9)";
 
 function preload() {
-  audio = loadSound("assets/suonds/niwel-bad_love.mp3");
+  audio = loadSound("./assets/suonds/niwel-bad_love.mp3");
 }
 
 function setup() {
@@ -18,12 +18,12 @@ function setup() {
   fft.setInput(audio);
 
   // Button Play
-  buttonplay = createImg("assets/img/play.svg");
+  buttonplay = createImg("./assets/img/play.svg");
   buttonplay.style("width", "32px");
   buttonplay.position(width / 2 - 16, height / 2 - 16);
   buttonplay.mousePressed(playpause);
   // Button Pause
-  buttonpause = createImg("assets/img/pause.svg");
+  buttonpause = createImg("./assets/img/pause.svg");
   buttonpause.style("width", "32px");
   buttonpause.position(width / 2 - 16, height / 2 - 16);
   buttonpause.mousePressed(playpause);
