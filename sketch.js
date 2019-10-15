@@ -1,3 +1,4 @@
+var audio;
 var buttonplay;
 var buttonpause;
 var sw = 1;
